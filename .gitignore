@@ -11,3 +11,7 @@
 
 # Git
 *~HEAD
+
+# Compiled Files
+build/
+build/*
