@@ -1,2 +1,2 @@
-# Gutensite-Docs
-Documentation for the Gutensite Framework and CMS
+# Sitetheory-Docs
+Documentation for the Sitetheory Framework and CMS Platform

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Gutensite documentation build configuration file, created by
+# Sitetheory documentation build configuration file, created by
 # sphinx-quickstart on Thu Apr 30 10:23:48 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -14,6 +14,7 @@
 
 import sys
 import os
+import sphinx_rtd_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -51,8 +52,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Gutensite'
-copyright = u'2015, Gutensite'
+project = u'Sitetheory'
+copyright = u'2017, Sitetheory'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -114,7 +115,8 @@ html_theme = 'sphinx_rtd_theme'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ["_templates/sphinx_rtd_theme"]
+# html_theme_path = ["_templates/sphinx_rtd_theme"]
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -184,7 +186,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Gutensitedoc'
+htmlhelp_basename = 'Sitetheorydoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -204,8 +206,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Gutensite.tex', u'Gutensite Documentation',
-   u'Gutensite', 'manual'),
+  ('index', 'Sitetheory.tex', u'Sitetheory Documentation',
+   u'Sitetheory', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -234,8 +236,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'gutensite', u'Gutensite Documentation',
-     [u'Gutensite'], 1)
+    ('index', 'sitetheory', u'Sitetheory Documentation',
+     [u'Sitetheory'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -248,8 +250,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Gutensite', u'Gutensite Documentation',
-   u'Gutensite', 'Gutensite', 'One line description of project.',
+  ('index', 'Sitetheory', u'Sitetheory Documentation',
+   u'Sitetheory', 'Sitetheory', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -269,13 +271,13 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'Gutensite'
-epub_author = u'Gutensite'
-epub_publisher = u'Gutensite'
-epub_copyright = u'2015, Gutensite'
+epub_title = u'Sitetheory'
+epub_author = u'Sitetheory'
+epub_publisher = u'Sitetheory'
+epub_copyright = u'2017, Sitetheory'
 
 # The basename for the epub file. It defaults to the project name.
-#epub_basename = u'Gutensite'
+#epub_basename = u'Sitetheory'
 
 # The HTML theme for the epub output. Since the default themes are not optimized
 # for small screen space, using the same theme for HTML and epub output is
