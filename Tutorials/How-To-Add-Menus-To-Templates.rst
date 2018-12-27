@@ -116,3 +116,4 @@ Below is the recommended structure of the menus (which is already styled in the 
 
 
 **Section Name** - In cases where we use a section menu (e.g. `parent`="section" on a sidebar) we often want to know what section we are in (e.g. to put the name above the menu). So when we fetch that, we insert that information into the Twig Environment for the designer to access in the template. {{ section }} will contain an object that includes {'name', 'url'}.
+For getting section name,url we need to call {% set sectionName = sectionName(content,parent) %} where content can be object or menuId and parent will be nestParentId of the section for which we want to show the section name.
